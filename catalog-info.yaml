@@ -6,6 +6,8 @@ metadata:
   # Example for optional annotations
   annotations:
     github.com/project-slug: Padmapriya-VN/python-app
+  tags:
+    - python
 
 spec:
   type: service
