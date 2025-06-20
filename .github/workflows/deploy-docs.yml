@@ -1,0 +1,25 @@
+name: Publish TechDocs Site
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "docs/**"
+      - "mkdocs.yml"
+  workflow_dispatch:
+    inputs:
+      env:
+        description: 'Enter a enviroment'
+        required: true
+        default: 'prod'
+        type: choice
+        options:
+          - prod
+          - np
+
+jobs:
+  publish-techdocs-site:
+    uses: bayer-int/backstage-reusable-workflows/.github/workflows/deploy-docs.yml@main
+    with:
+      env: np
