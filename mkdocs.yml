@@ -1,0 +1,12 @@
+site_name: "python-app"
+site_description: "testing docs - vnp"
+repo_url: https://github.com/Padmapriya-VN/python-app
+edit_uri: edit/main/docs
+
+nav:
+  - Introduction: index.md
+  - Contributors: contributors.md
+  - Contributing: contributing.md
+
+plugins:
+  - techdocs-core
